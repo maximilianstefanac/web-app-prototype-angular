@@ -1,3 +1,13 @@
-#app-root {
+.container {
+    height: 100%;
+}
+
+/* router-outlet {
+    height: 100%;
+    display: block;
+} */
+
+app-leaflet-map {
+    display: block;
     height: 100%;
 }

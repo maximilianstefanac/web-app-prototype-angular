@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from "@angular/router";
 
+import { LeafletModule } from '@asymmetrik/ngx-leaflet';
+
 import { AppComponent } from './app.component';
 import { LeafletMapComponent } from './leaflet-map/leaflet-map.component';
 import { TreeDetailComponent } from "./tree-detail/tree-detail.component";
@@ -19,7 +21,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
       {path: '', component: LeafletMapComponent},
       {path: 'detail', component: TreeDetailComponent }
     ]),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    LeafletModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
