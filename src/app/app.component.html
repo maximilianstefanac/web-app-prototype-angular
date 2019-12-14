@@ -3,6 +3,14 @@
   <li><a [routerLink]="['/']">Map</a></li>
   <li><a [routerLink]="['/detail']">Details</a></li>
 </ul> -->
-<div class="container">
-    <router-outlet></router-outlet>
-</div>
+<mat-drawer-container>
+
+  <mat-drawer-content fullscreen>
+    <mat-toolbar color="primary">
+      <span>Streuobstwiesen</span>
+    </mat-toolbar>
+    <div class="container">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>

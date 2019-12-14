@@ -9,3 +9,14 @@ html, body {
 }
 
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+mat-drawer-container {
+    height: 100%;
+}
+
+mat-drawer-content { 
+    display: flex !important;
+    flex-direction: column;
+    flex: 1 1 auto;
+    height: 100%;
+}
